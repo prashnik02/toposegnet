@@ -161,7 +161,6 @@ pip install segmentation_models_pytorch==0.5.0 albumentations==2.0.8 rasterio==1
 **Known constraints:**
 - **`num_workers=0` in every DataLoader.** Pickling memmaps breaks under Windows multiprocessing spawn.
 - **Paths are hardcoded and absolute** (`DATA_ROOT` in `src/dataset.py`, `save_dir` in `train.py`, and in the analysis scripts). Update them for your machine.
-- `evaluate.py` at the repo root is stale. Use `src/evaluate_notebook.py`.
 - `src/evaluate_notebook.py` needs `PYTHONIOENCODING=utf-8` when stdout is piped.
 
 ---

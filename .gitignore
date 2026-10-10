@@ -45,3 +45,23 @@ src/untitled*.py
 
 # Scratch notebooks
 notebooks/Untitled*.ipynb
+
+# Not part of the public repo (empty, stale, superseded, one-off or machine-specific)
+config.py
+src/losses.py
+src/metrics.py
+evaluate.py
+src/terrain_test.png
+src/terrain.py
+src/fetch_scl.py
+notebooks/DataTrial.ipynb
+notebooks/Test_set.ipynb
+notebooks/Slope.ipynb
+watchdog.ps1
+analysis/elevation_stratified_report.py
+analysis/film_elev_report.py
+analysis/plot_gap_latlon_val.py
+analysis/check_slope_quality.py
+analysis/check_slope_train.py
+analysis/check_dem_blocksize.py
+analysis/check_srtm_coverage.py
