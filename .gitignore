@@ -1,0 +1,47 @@
+# Data and run outputs (multi-GB memmaps, checkpoints)
+data/
+experiments/
+checkpoints/
+*.pth
+*.dat
+*.npy
+
+# Training logs
+logs_*.txt
+*.log
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Manuscript and reports (released with the preprint)
+paper/
+paper_grsl/
+paper_tmlr/
+paper_tmlr_v2/
+TopoSegNet_Progress_Report*
+TopoSegNet_TCM_architecture.pdf
+make_progress_report.py
+report_figures/
+
+# Local notes
+TMLR_READING_LIST.md
+PROJECT_STRUCTURE.md
+
+# Local / scratch files
+Old/
+paper_tmlr_v2 - Rename/
+*.bak
+src/untitled*.py
+
+# Scratch notebooks
+notebooks/Untitled*.ipynb
