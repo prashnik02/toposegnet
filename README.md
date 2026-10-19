@@ -1,7 +1,5 @@
 # TopoSegNet
 
-**How auxiliary terrain is delivered to a U-Net matters for Sentinel-2 cloud and cloud-shadow segmentation, and the usual way of delivering it causes harm.**
-
 TopoSegNet is a controlled ablation study on [CloudSEN12](https://huggingface.co/datasets/csaybar/CloudSEN12-high). It segments Sentinel-2 L1C patches into four classes (`clear`, `thick cloud`, `thin cloud`, `cloud shadow`) and asks whether elevation helps. Every run uses a U-Net with an ImageNet-pretrained ResNet-34 encoder.
 
 > 📄 Paper in preparation for *Transactions on Machine Learning Research* (TMLR). An arXiv preprint will be linked here.
@@ -10,7 +8,7 @@ TopoSegNet is a controlled ablation study on [CloudSEN12](https://huggingface.co
 
 ## TL;DR
 
-In a U-Net with a ResNet-34 encoder on CloudSEN12:
+**How elevation is delivered to the network matters, and the usual way of delivering it causes harm.** In a U-Net with a ResNet-34 encoder on CloudSEN12:
 
 1. **Concatenating elevation as an extra encoder input channel lowers segmentation quality compared with using no terrain, and the loss grows with altitude.** It is concentrated above 3000 m.
 2. **Injecting the same elevation through a separate branch at depth** (`gap`, `TCM`) **avoids that loss, but it does not beat the no-terrain baseline in any stratum.**
