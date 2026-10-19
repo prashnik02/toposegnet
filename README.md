@@ -2,8 +2,6 @@
 
 TopoSegNet is a controlled ablation study on [CloudSEN12](https://huggingface.co/datasets/csaybar/CloudSEN12-high). It segments Sentinel-2 L1C patches into four classes (`clear`, `thick cloud`, `thin cloud`, `cloud shadow`) and asks whether elevation helps. Every run uses a U-Net with an ImageNet-pretrained ResNet-34 encoder.
 
-> 📄 Paper in preparation for *Transactions on Machine Learning Research* (TMLR). An arXiv preprint will be linked here.
-
 ---
 
 ## TL;DR
@@ -234,9 +232,3 @@ python run_queue.py
 - **PAPA** (replacing attention with constant averaged attention): [arXiv:2211.03495](https://arxiv.org/abs/2211.03495)
 - **CloudSEN12**: Aybar et al., *Scientific Data* 2022, [doi:10.1038/s41597-022-01878-2](https://doi.org/10.1038/s41597-022-01878-2)
 - **MERIT Hydro**: Yamazaki et al., *Water Resources Research* 2019
-
----
-
-## Citation
-
-A citation entry will be added when the preprint is posted.
